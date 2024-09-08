@@ -1,0 +1,25 @@
+<timetable>
+    <lang> ru </lang>
+	<day> Wednesday </day>
+    <lessons>
+        <lesson1>
+            <teacher> Балакшин Павел Валерьевич </teacher>
+			<time> 08:20-09:50 </time>
+			<group> ИНФОРМ 3 </group>
+			<room> Актовый зал </room>
+			<place> ул.Ломоносова, д.9, лит. М </place>
+			<subject> ИНФОРМАТИКА (ЛЕК): АКТОВЫЙ ЗАЛ</subject>
+			<lesson-format> Очно-дистанционный </lesson-format>
+        </lesson1>
+        <lesson2>
+            <teacher> Клименков Сергей Викторович </teacher>
+			<time> 10:00-11:30 </time>
+			<group> ОСН ПРОФ ДЕЯТ 1 </group>
+			<room> Актовый зал </room>
+			<place> ул.Ломоносова, д.9, лит. М </place>
+			<subject> ОСНОВЫ ПРОФЕССИОНАЛЬНОЙ ДЕЯТЕЛЬНОСТИ (ЛЕК) : АКТОВЫЙ ЗАЛ</subject>
+			<lesson-format> Очно-дистанционный </lesson-format>
+        </lesson2>
+    </lessons>
+</timetable>
+

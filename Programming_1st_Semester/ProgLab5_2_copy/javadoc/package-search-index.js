@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"collection.comparators"},{"l":"collection.StudyGroupPackage"},{"l":"commands.auxillary"},{"l":"commands.concreteCommands"},{"l":"exceptions"},{"l":"managers"}];updateSearchResults();

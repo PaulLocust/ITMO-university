@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "sg1",
+    "coordinates": {
+      "x": 123,
+      "y": 123.0
+    },
+    "creationDate": "29::апр.::2024 23::50::21 MSK",
+    "studentsCount": 15,
+    "transferredStudents": 5,
+    "averageMark": 5,
+    "semesterEnum": "FIRST",
+    "groupAdmin": {
+      "name": "namepers",
+      "height": 180.0,
+      "eyeColor": "RED",
+      "hairColor": "RED",
+      "nationality": "RUSSIA",
+      "location": {
+        "x": 123.0,
+        "y": 123.0,
+        "z": 32,
+        "name": "loca"
+      }
+    }
+  }
+]

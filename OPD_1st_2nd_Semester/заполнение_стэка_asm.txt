@@ -1,0 +1,7 @@
+org 0x000
+x: WORD 0x7FB
+START:
+	PUSH
+	LOOP x
+	JUMP START
+	HLT

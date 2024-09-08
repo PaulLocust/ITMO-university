@@ -1,0 +1,5 @@
+Dbeaver
+Datagrip
+Pgadmin
+ssh -p 2222 sxxx@seifmo.ru
+-L 5488:pg:5432

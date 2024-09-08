@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "asd",
+    "coordinates": {
+      "x": 123,
+      "y": 23.0
+    },
+    "creationDate": "29::апр.::2024 23::30::32 MSK",
+    "studentsCount": 23,
+    "transferredStudents": 42,
+    "averageMark": 142,
+    "semesterEnum": "FIRST",
+    "groupAdmin": {
+      "name": "per",
+      "height": 180.0,
+      "eyeColor": "RED",
+      "hairColor": "RED",
+      "nationality": "RUSSIA",
+      "location": {
+        "x": 123.0,
+        "y": 23.0,
+        "z": 14,
+        "name": "lica"
+      }
+    }
+  }
+]

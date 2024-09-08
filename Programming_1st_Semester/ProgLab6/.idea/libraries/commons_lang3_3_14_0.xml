@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="commons-lang3-3.14.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/commons-lang3-3.14.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/gson-2.8.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/guava-33.1.0-jre.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
