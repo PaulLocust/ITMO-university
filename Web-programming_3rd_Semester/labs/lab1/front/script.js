@@ -13,6 +13,7 @@ function checkForm(element) {
         }),
     }).then(response=> response.json()).then(data=>{
         const status=data.status
+        alert(status);
     })
     return false;
 }

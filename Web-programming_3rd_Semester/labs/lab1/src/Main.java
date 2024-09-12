@@ -26,10 +26,10 @@ public class Main {
                 boolean status;
                 if(floats.length == 0){
                     status = false;
-                    System.out.println(status);
+                    content = content.formatted("false");
                 }else{
                     status = true;
-                    System.out.println(status);
+                    content = content.formatted("true");
                 }
                 
                 long endTime = System.nanoTime();
