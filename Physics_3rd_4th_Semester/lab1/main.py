@@ -7,7 +7,7 @@ with open('data.txt', 'r') as f:
 
 
 def arithmetic_mean(array):
-    # Среднее арифметическое ⟨t⟩_N
+    # Среднее арифметическое <t>_N
     sum = 0
     for i in array:
         sum += i
@@ -16,7 +16,7 @@ def arithmetic_mean(array):
 
 
 def average_deviation():
-    # t_i - ⟨t⟩_N, с
+    # t_i - <t>_N, с
     deviations = []
     for i in periods:
         deviations.append(round(i - arithmetic_mean(periods), 2))
@@ -33,7 +33,7 @@ def check_average_deviation():
 
 def average_deviation_pow():
     # Отклонение периода колебаний маятника от среднего значения периода колебаний
-    # (t_i - ⟨t⟩_N )^2, с2
+    # (t_i - <t>_N )^2, с2
     deviations = []
     for i in periods:
         deviations.append(round(pow(i - arithmetic_mean(periods), 2), 8))
@@ -42,15 +42,21 @@ def average_deviation_pow():
 
 def sample_standard_deviation():
     # среднеквадратичное отклонение среднего значения.
-    # σ_⟨t⟩
-    arithm_m = arithmetic_mean(average_deviation_pow())
-    return math.sqrt((1 / (periods_len * (periods_len-1))) * arithm_m)
+    # σ_<t>
+    sum_deviations = sum(average_deviation_pow())
+    return math.sqrt((1 / (periods_len * (periods_len - 1))) * sum_deviations)
+
+def sample_standard_deviation_picked():
+    # среднеквадратичное отклонение среднего значения.
+    # σ_<N>
+    sum_deviations = sum(average_deviation_pow())
+    return math.sqrt((1 / (periods_len - 1)) * sum_deviations)
 
 
 def max_distribution_density():
     # Максимальная плотность распределения
     # p_max
-    return 1 / (sample_standard_deviation() * math.sqrt(2 * math.pi))
+    return 1 / (sample_standard_deviation_picked() * math.sqrt(2 * math.pi))
 
 
 def print_data():
@@ -60,11 +66,13 @@ def print_data():
 
     print("(t_i - <t>N)^2 = " + str(average_deviation_pow()) + "\n")
 
-    print("σ_⟨t⟩ = " + str(sample_standard_deviation()) + "\n")
+    print("σ_<t> = " + str(sample_standard_deviation()) + "\n")
+
+    print("σ_<N> = " + str(sample_standard_deviation_picked()) + "\n")
 
     print("p_max = " + str(max_distribution_density()) + "\n")
 
-    print("Данные:" + str(periods) + "\n")
+    print("Данные:" + str(sorted(periods)) + "\n")
 
 
 print_data()
